@@ -1,0 +1,28 @@
+#utf-8 python3
+
+def handle_numbers(value):
+	"""
+	Takes: str
+	Output: count number of letters(int) and digits(int).
+	"""
+	if len(value) == 0:
+		return False
+
+	num = set('0123456789')
+	lett = 'abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ'
+	set(value)
+	digits = 0
+	letters = 0
+	for x in value:
+		if x in num:
+			digits += 1
+		elif x in lett:
+			letters += 1
+		else:
+			continue
+	print(f'Letters - {letters}')
+	print(f'Digits - {digits}')
+	return digits, letters
+
+if __name__ == '__main__':
+    handle_numbers("hello world! 123!")

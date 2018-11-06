@@ -3,7 +3,7 @@
 def handle_numbers(number1, number2, number3):
 	"""
 	Input: as a parameters numbers (int, int, int)
-	Output -  count of integers that are divisible by number3 
+	Output:  count of integers that are divisible by number3 
 	in range [number1, number2]
 	"""
 

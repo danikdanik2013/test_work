@@ -1,0 +1,21 @@
+#utf-8 python3
+import re
+
+def handle_numbers(value):
+	"""
+	Takes: str
+	Output: count number of letters(int) and digits(int).
+	"""
+	if len(value) == 0:
+		print('Please, input more values')
+		return False
+
+	digits = len(re.findall(r'\d', value))
+	letters = len(re.findall('[a-zA-Z]',value))
+	print(f'Letters - {letters}')
+	print(f'Digits - {digits}')
+	return digits, letters
+
+
+if __name__ == '__main__':
+    handle_numbers("hello world! 123!")

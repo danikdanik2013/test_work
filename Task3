@@ -19,4 +19,4 @@ def handle_list_of_tuples():
 	return a
 
 if __name__ == '__main__':
-    handle_numbers()
+    handle_list_of_tuples()

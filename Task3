@@ -1,0 +1,22 @@
+#utf-8 python3
+
+def handle_list_of_tuples():
+	"""
+	Input: list
+	Output: sorted list
+	"""
+	list12 = [
+    ("Tom", "19", "167", "54"), 
+    ("Jony", "34", "180", "69"),
+    ("Json", "21", "185", "75"),
+    ("John", "27", "190", "87"), 
+    ("Jony", "24", "191", "98"),
+    ("Jony", "24", "191", "10"),
+    ("Jony", "24", "192", "10"),
+    ]
+	a = sorted(list12, key=lambda tup: (tup[0],tup[1],tup[2],tup[3]))
+	print(a)
+	return a
+
+if __name__ == '__main__':
+    handle_numbers(a)

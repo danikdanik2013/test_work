@@ -2,7 +2,7 @@
 
 def handle_numbers(value):
 	"""
-	Takes: str
+	Input: str
 	Output: count number of letters(int) and digits(int).
 	"""
 	if len(value) == 0:
